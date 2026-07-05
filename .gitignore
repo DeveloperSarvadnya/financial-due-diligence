@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+
+# Environment variables (API keys — never commit!)
+.env
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# ChromaDB persistent storage (too large for git)
+chroma_db/
+
+# Generated reports (optional — can include examples)
+reports/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
