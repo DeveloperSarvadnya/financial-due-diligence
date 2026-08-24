@@ -15,7 +15,7 @@ This project automates that entire workflow. A user enters a company name, and w
 ## What It Does
 
 - **Accepts any US public company** by name or ticker symbol
-- **Scrapes SEC EDGAR** for official 10-K, 10-Q, and 8-K filings
+- **Scrapes SEC EDGAR** for official 10-K filings using BeautifulSoup
 - **Fetches real-time news** via the Tavily API for forward-looking context
 - **Embeds and stores** all documents in a local vector database (ChromaDB)
 - **Runs 4 specialized AI agents** that analyze risk, financials, competitive position, and synthesize findings
@@ -105,7 +105,7 @@ This project automates that entire workflow. A user enters a company name, and w
 | **Python 3.14** | Core language | Industry standard for ML/AI pipelines |
 | **Ollama + Llama 3.1 8B** | Local LLM | Free, private, offline-capable. No API costs. Runs natively on Apple Silicon. |
 | **LangChain** | Chain building (LCEL) | De facto standard for RAG pipelines. `prompt \| llm \| parser` syntax. |
-| **LangGraph** | Agent orchestration | Stateful graph-based workflows. Agents share state via TypedDict. Supports complex routing patterns. |
+| **LangGraph** | Agent orchestration | Stateful graph-based workflows. Agents share state via TypedDict. |
 | **ChromaDB (PersistentClient)** | Vector database | Free, local, persistent across sessions. Cosine similarity search with metadata filtering. |
 | **nomic-embed-text** | Embedding model | Free, runs locally via Ollama. Good quality for document retrieval tasks. |
 | **SEC EDGAR API** | Financial data source | Official, free, real-time access to all US public company filings. |
